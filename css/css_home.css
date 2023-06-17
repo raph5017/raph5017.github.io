@@ -1,4 +1,28 @@
-/* This is the external style sheet that controls the Hallasan National Park website */
+/* This is the external style sheet that controls my personal website */
+
+/* Adjust the size and positioning of the photo container */
+.photo-container {
+		width: 50%;
+		margin: 0 auto;
+		overflow: hidden;
+		float: right;
+}
+
+/* Adjust the size and positioning of the text box container */
+.text-container {
+		width: 50%;
+		margin: 0 auto;
+		padding: 20px;
+		box-sizing: border-box;
+		float: left;
+}
+
+/* Adjust the size and positioning of the photo */
+.photo-container img {
+		width: 50%;
+		height: auto;
+		object-fit: cover;
+}
 
 /* Body element*/
 body {
@@ -8,7 +32,7 @@ body {
 /* Header element*/
 h1 {
 	text-align: center;
-	color: black;
+	color: white;
 	font-family: "Arial";
 }
 
@@ -135,7 +159,7 @@ button {
 /*Bootstrap CSS*/
 
 .jumbotron {
- background-color: #336600;
+ background-color: #154c79;
  color: white;
 }
 
