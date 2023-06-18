@@ -4,8 +4,7 @@
 /* For the large heading */
 
 .jumbotron {
- background-color: #004D8B;
- color: white;
+ background-color: #333;
 }
 
 /* For the top menu bar */
@@ -88,7 +87,7 @@
 		width: 50%;
 		margin: 0 auto;
 		overflow: hidden;
-		float: right;
+		float: left;
 }
 
 /* Adjust the size and positioning of the text box container */
@@ -97,7 +96,7 @@
 		margin: 0 auto;
 		padding: 20px;
 		box-sizing: border-box;
-		float: left;
+		float: right;
 }
 
 /* Adjust the size and positioning of the photo */
