@@ -11,6 +11,8 @@
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<!-- Bootstrap CSS -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" crossorigin="anonymous">
+	<!-- User CSS for the website -->
+	<link rel="stylesheet" type="text/css" href="css/css1.css">
 	<!-- User CSS for the homepage -->
 	<link rel="stylesheet" type="text/css" href="css/css_home.css">
 </head>
@@ -18,19 +20,30 @@
 <body>
 
 <!-- Top Menu Bar -->
-<div class="topnav">
-	 <a class="active" href="index.html"><i class="fa fa-fw fa-home"></i></a>
-	 <a href="trails.html">Trails</a>
-	 <a href="wildlife.html">Wildlife</a>
-	 <a href="info.html">Info</a></li>
-
-	 <div class="topnav-right">
-	   <a href="mailto:info@hallasan.com"><i class="fa fa-fw fa-envelope"></i></a>
-	 </div>
-</div>
-
-<div class="jumbotron text-center">
-	<h1>Raph Martin</h1>
+<div class="navbar">
+  <a href="#home"><i class="fa fa-fw fa-home"></i></a>
+  <div class="dropdown">
+    <button class="dropbtn">Projects
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+			<a href="#news">Python</a>
+			<a href="#news">SQL</a>
+			<a href="#news">Remote Sensing</a>
+			<a href="#news">Dissertation</a>
+    </div>
+  </div>
+	<div class="dropdown">
+		<button class="dropbtn">Web Project
+			<i class="fa fa-caret-down"></i>
+		</button>
+		<div class="dropdown-content">
+			<a href="hallasan_index.html">Hallasan National Park</a>
+			<a href="trails.html">Trails</a>
+			<a href="wildlife.html">Wildlife</a>
+			<a href="info.html">Info</a>
+		</div>
+	</div>
 </div>
 
 		<div class="container">

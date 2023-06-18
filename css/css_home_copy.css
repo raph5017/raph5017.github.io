@@ -1,17 +1,10 @@
 /* This is the external style sheet that controls the homepage */
 
-
-/* For the large heading */
-
-.jumbotron {
- background-color: #004D8B;
- color: white;
-}
-
 /* For the top menu bar */
 
 /* Navbar container */
 .navbar {
+  overflow: hidden;
   background-color: #333;
   font-family: Arial;
 }
@@ -29,12 +22,11 @@
 /* The dropdown container */
 .dropdown {
   float: left;
-	border-radius: 0;
+  overflow: hidden;
 }
 
 /* Dropdown button */
 .dropdown .dropbtn {
-	border-radius: 0;
   font-size: 16px;
   border: none;
   outline: none;
@@ -48,7 +40,6 @@
 /* Add a blue background color to navbar links on hover */
 .navbar a:hover, .dropdown:hover .dropbtn {
   background-color: #4CAF50;
-	color: black;
 }
 
 /* Dropdown content (hidden by default) */
@@ -79,30 +70,4 @@
 /* Show the dropdown menu on hover */
 .dropdown:hover .dropdown-content {
   display: block;
-}
-
-/* For the photo and about me section */
-
-/* Adjust the size and positioning of the photo container */
-.photo-container {
-		width: 50%;
-		margin: 0 auto;
-		overflow: hidden;
-		float: right;
-}
-
-/* Adjust the size and positioning of the text box container */
-.text-container {
-		width: 50%;
-		margin: 0 auto;
-		padding: 20px;
-		box-sizing: border-box;
-		float: left;
-}
-
-/* Adjust the size and positioning of the photo */
-.photo-container img {
-		width: 50%;
-		height: auto;
-		object-fit: cover;
 }
