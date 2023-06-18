@@ -105,3 +105,17 @@
 		height: auto;
 		object-fit: cover;
 }
+
+/* for linkedin icon */
+.fa-linkedin {
+  background: #007bb5;
+	color: white;
+	padding: 5px;
+}
+
+/* for github icon */
+.fa-github {
+  background: #007bb5;
+  color: white;
+	padding: 5px;
+}
