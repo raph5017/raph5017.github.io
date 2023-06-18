@@ -110,7 +110,8 @@
 .fa-linkedin {
   background: #007bb5;
 	color: white;
-	padding: 5px;
+  padding: 5px;
+  font-size: 200%;
 }
 
 /* for github icon */
@@ -118,4 +119,6 @@
   background: #007bb5;
   color: white;
 	padding: 5px;
+  font-size: 200%;
+  margin-left: 10px;
 }
