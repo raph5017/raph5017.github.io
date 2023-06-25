@@ -5,7 +5,7 @@
 	<title>Trails</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta charset="UTF-8">
-	
+
 	<!-- Icon library -->
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<!-- Latest compiled and minified CSS -->
@@ -18,27 +18,47 @@
 	<link rel="stylesheet" href="ol-layerswitcher/ol-layerswitcher.css" />
 	<!-- Third Party styles for map -->
 	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<!-- User CSS for the homepage -->
+	<link rel="stylesheet" type="text/css" href="css/css_home.css">
 
 </head>
 
 <body>
 
-<!-- Top Menu Bar -->
-<div class="topnav">
-  <a href="index.html"><i class="fa fa-fw fa-home"></i></a>
-  <a class="active" href="trails.html">Trails</a>
-  <a href="wildlife.html">Wildlife</a>
-  <a href="info.html">Info</a></li>
-  
-  <div class="topnav-right">
-    <a href="mailto:info@hallasan.com"><i class="fa fa-fw fa-envelope"></i></a>
-  </div>
-</div>
+	<!-- Top Menu Bar -->
+	<div class="navbar">
+	  <a href="index.html"><i class="fa fa-fw fa-home"></i></a>
+	  <div class="dropdown">
+	    <button class="dropbtn">Projects
+	      <i class="fa fa-caret-down"></i>
+	    </button>
+	    <div class="dropdown-content">
+				<a href="python.html">Python</a>
+				<a href="sql.html">SQL</a>
+				<a href="remote.html">Remote Sensing</a>
+				<a href="dissertation.html">Dissertation</a>
+	    </div>
+	  </div>
+		<div class="dropdown">
+			<button class="dropbtn">Web Project
+				<i class="fa fa-caret-down"></i>
+			</button>
+			<div class="dropdown-content">
+				<a href="hallasan_index.html">Hallasan National Park</a>
+				<a href="trails.html">Trails</a>
+				<a href="wildlife.html">Wildlife</a>
+				<a href="info.html">Info</a>
+			</div>
+		</div>
+		<div class="topnav-right">
+			<a href="mailto:raph5017@gmail.com"><i class="fa fa-fw fa-envelope"></i></a>
+		</div>
+	</div>
 
 <body onload="initMap();">
 
 	<div class="container-fluid">
-	
+
 		<div class="row">
 			<div class="col-sm-12">
 				<div class="page-header">
@@ -46,8 +66,8 @@
 				</div>
 			</div>
 		</div>
-		
-		<div class="row"> 
+
+		<div class="row">
 			<div class="col-sm-12">
 				<div class="well">
 					<p>There are four major hikes in the park as well as many other, smaller trails. If you would like to measure your own route
@@ -56,7 +76,7 @@
 			</div>
 			<div class="col-sm-12">
 				<div class="well">
-				
+
 					<!-- Accordion buttons -->
 					<h3 class="bold">
 					<button class="accordion">Seongpanak Trail<p class="brown">----</p></button>
@@ -80,8 +100,8 @@
 			</div>
 		</div>
 	</div>
-	
-	
+
+
 <!-- Toolbar for Map -->
 <div class = "toolbar">
 	<button id = "btn1" title = "Distance Measurement" geomtype = "LineString"></button>
@@ -90,9 +110,9 @@
 </div>
 
 <!-- Trail Map -->
-<div id="map" class="map">   
+<div id="map" class="map">
 	<div id = "popup"></div>
-</div> 
+</div>
 
 <!-- Reference for measurement tool -->
 <p>
@@ -113,6 +133,6 @@
 	<script type="text/javascript" src="js/trailmap.js"></script>
 	<!-- Third party JS for layer switcher -->
 	<script src="ol-layerswitcher/ol-layerswitcher.js"></script>
-	
+
 </body>
 </html>
