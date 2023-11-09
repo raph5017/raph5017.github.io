@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-	<title>RM's Website</title>
+	<title>SQL Project</title>
 
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta charset="UTF-8">
@@ -11,7 +11,7 @@
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<!-- Bootstrap CSS -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" crossorigin="anonymous">
-	<!-- User CSS for the website -->
+	<!-- User CSS -->
 	<link rel="stylesheet" type="text/css" href="css/css1.css">
 	<!-- User CSS for the homepage -->
 	<link rel="stylesheet" type="text/css" href="css/css_home.css">
@@ -19,53 +19,93 @@
 
 <body>
 
-<!-- Top Menu Bar -->
-<div class="navbar">
-  <a href="index.html"><i class="fa fa-fw fa-home"></i></a>
-  <div class="dropdown">
-    <button class="dropbtn">Projects
-      <i class="fa fa-caret-down"></i>
-    </button>
-    <div class="dropdown-content">
-			<a href="python.html">Python</a>
-			<a href="sql.html">SQL</a>
-			<a href="remote.html">Remote Sensing</a>
-			<a href="dissertation">Dissertation</a>
-    </div>
-  </div>
-	<div class="dropdown">
-		<button class="dropbtn">Web Project
-			<i class="fa fa-caret-down"></i>
-		</button>
-		<div class="dropdown-content">
-			<a href="hallasan_index.html">Hallasan National Park</a>
-			<a href="trails.html">Trails</a>
-			<a href="wildlife.html">Wildlife</a>
-			<a href="info.html">Info</a>
+	<!-- Top Menu Bar -->
+	<div class="navbar">
+	  <a href="index.html"><i class="fa fa-fw fa-home"></i></a>
+	  <div class="dropdown">
+	    <button class="dropbtn">Projects
+	      <i class="fa fa-caret-down"></i>
+	    </button>
+	    <div class="dropdown-content">
+				<a href="python.html">Python</a>
+				<a href="sql.html">SQL</a>
+				<a href="remote.html">Remote Sensing</a>
+				<a href="dissertation.html">Dissertation</a>
+	    </div>
+	  </div>
+		<div class="dropdown">
+			<button class="dropbtn">Web Project
+				<i class="fa fa-caret-down"></i>
+			</button>
+			<div class="dropdown-content">
+				<a href="hallasan_index.html">Hallasan National Park</a>
+				<a href="trails.html">Trails</a>
+				<a href="wildlife.html">Wildlife</a>
+				<a href="info.html">Info</a>
+			</div>
+		</div>
+		<div class="topnav-right">
+			<a href="mailto:raph5017@gmail.com"><i class="fa fa-fw fa-envelope"></i></a>
 		</div>
 	</div>
-	<div class="topnav-right">
-		<a href="mailto:raph5017@gmail.com"><i class="fa fa-fw fa-envelope"></i></a>
-	</div>
+
+<div class="jumbotron text-center">
+	<h1>Pothole Database in Cheltenham, UK</h1>
 </div>
 
-		<div class="container">
-				<div class="row">
-						<div class="col-md-12 text-center">
-								<div class="photo-container">
-										<img src="images/rmphoto.jpg" alt="Portrait Photo">
-								</div>
-								<div class="text-container">
-										<h1> Raph Martin </h1>
-										<p>I'm a british citizen with permanent US residency seeking employment in the US.
-										Please have a look at my projects using the navigation bar.</p>
-										<a href="https://linkedin.com/in/raphaelmartin10/" class="fa fa-linkedin"></a>
-										<a href="https://github.com/raph5017" class="fa fa-github"></a>
-									</a>
-								</div>
-						</div>
+<div class="container-fluid">
+	<div class="row">
+		<div class="col-sm-6">
+			<div class="well">
+				<h1>Introduction & Methods</h1>
+				<p1>The aim of this study was to use PostgreSQL to create and interrogate
+					a database of pothole locations, similar to what a local authority would need.
+					Non-spatial tables include pothole details and employee information.
+					The spatial tables include a point table showing the location of potholes, two
+					tables consisting of line data representing roads and bike lanes, and
+					a table containing polygon data of different wards within the town.
+					There are no attribute relationships between the road, bike lanes and wards tables,
+					however, they share a spatial relationship that they also share with the pothole
+					location table. This allows for spatial queries using PostGIS.
 				</div>
+			</div>
+
+			<div class="col-sm-6">
+				<div class="well well-sm">
+					<h3 class="black">Script used to create pothole details table</h3>
+					<p>Non spatial tables were created using DDL.
+					</p>
+						<img id="sql1.png" src="images/sql1.png"/>
+				</div>
+			</div>
 		</div>
+
+				<div class="row">
+					<div class ="col-sm-6">
+						<div class="well well-sm">
+							<h3 class="black">Non-spatial Queries</h3>
+							<p>Multiple non-spatial queries were carried out including identifying
+								potholes that haven't been assessed and they date they were first identified.
+							</p>
+							<img id="sql2.png" src="images/sql3.png"/>
+						</div>
+					</div>
+				</div>
+
+		<div class="row">
+			<div class ="col-sm-6">
+				<div class="well well-sm">
+					<h3 class="black">Spatial Queries</h3>
+					<p>Multiple spatial queries were carried out including idenitfying
+						exact locations of the most dangerous potholes.
+					</p>
+					<img id="sql3.png" src="images/sql3.png"/>
+				</div>
+			</div>
+		</div>
+
+	</div>
+
 
 	<!-- Jquery -->
 	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" crossorigin="anonymous"></script>
